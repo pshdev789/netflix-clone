@@ -4,6 +4,7 @@ import "./App.css";
 import Row from "./Row";
 import requests from "./request";
 import Banner from "./Banner";
+import Nav from "./Nav";
 
 function App() {
   //useState is a react hook
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="app">
       <Banner />
+      <Nav />
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
